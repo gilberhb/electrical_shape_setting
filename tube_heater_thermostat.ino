@@ -1,8 +1,18 @@
 /*********************************************************
-/* Note, this code is designed to run on the Arduino
+* Note, this code is designed to run on the Arduino
 *  Uno, with a 16MHz clock rate. (ATMega 328p) It won't
 *  work if you switch to a different microprocessor or run
-*  at a different base clock frequency.
+*  at a different base clock frequency. 
+*
+* See the included LICENSE file. 
+* The system design for the system this code interfaces to is published. 
+* See doi:10.1109/LRA.2015.2507706
+* Please be aware of the risks associated with the operation of this system.
+* Some of these risks (not an exhaustive list) are as follows:
+*   -MOSFETs can fail short, creating a short-circuit condition
+*   -The temperatures involved are large enough to start a fire. Be prepared and plan ahead.
+*
+* The use of this code is at your own risk.
 *********************************************************/
 const int CS = 4;              //Chip select pin for ADS1255 (Arduino pinout)
 const int MOSFET = 8;          //pin which drives the fet (Arduino pinout)
